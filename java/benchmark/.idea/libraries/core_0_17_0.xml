@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="core-0.17.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ycsb-0.17.0/lib/core-0.17.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

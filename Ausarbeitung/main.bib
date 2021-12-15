@@ -1,0 +1,77 @@
+@inproceedings{contention_space_management,
+	author    = {Adnan Alhomssi and
+	Viktor Leis},
+	title     = {Contention and Space Management in B-Trees},
+	booktitle = {11th Conference on Innovative Data Systems Research, {CIDR} 2021,
+	Virtual Event, January 11-15, 2021, Online Proceedings},
+	publisher = {www.cidrdb.org},
+	year      = {2021},
+	url       = {http://cidrdb.org/cidr2021/papers/cidr2021\_paper21.pdf},
+	timestamp = {Tue, 23 Mar 2021 15:35:48 +0100},
+	biburl    = {https://dblp.org/rec/conf/cidr/AlhomssiL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{kiss_tree,
+	author = {Kissinger, Thomas and Schlegel, Benjamin and Habich, Dirk and Lehner, Wolfgang},
+	title = {KISS-Tree: Smart Latch-Free in-Memory Indexing on Modern Architectures},
+	year = {2012},
+	isbn = {9781450314459},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/2236584.2236587},
+	doi = {10.1145/2236584.2236587},
+	abstract = {Growing main memory capacities and an increasing number of hardware threads in modern server systems led to fundamental changes in database architectures. Most importantly, query processing is nowadays performed on data that is often completely stored in main memory. Despite of a high main memory scan performance, index structures are still important components, but they have to be designed from scratch to cope with the specific characteristics of main memory and to exploit the high degree of parallelism. Current research mainly focused on adapting block-optimized B+-Trees, but these data structures were designed for secondary memory and involve comprehensive structural maintenance for updates.In this paper, we present the KISS-Tree, a latch-free in-memory index that is optimized for a minimum number of memory accesses and a high number of concurrent updates. More specifically, we aim for the same performance as modern hash-based algorithms but keeping the order-preserving nature of trees. We achieve this by using a prefix tree that incorporates virtual memory management functionality and compression schemes. In our experiments, we evaluate the KISS-Tree on different workloads and hardware platforms and compare the results to existing in-memory indexes. The KISS-Tree offers the highest reported read performance on current architectures, a balanced read/write performance, and has a low memory footprint.},
+	booktitle = {Proceedings of the Eighth International Workshop on Data Management on New Hardware},
+	pages = {16–23},
+	numpages = {8},
+	location = {Scottsdale, Arizona},
+	series = {DaMoN '12}
+}
+@article{optimistic_locks,
+	title={Optimistic Lock Coupling: A Scalable and Efficient General-Purpose Synchronization Method},
+	author={Viktor Leis and Michael Haubenschild and Thomas Neumann},
+	journal={IEEE Data Eng. Bull.},
+	year={2019},
+	volume={42},
+	pages={73-84}
+}
+@inproceedings{ycsb,
+	author = {Cooper, Brian F. and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
+	title = {Benchmarking Cloud Serving Systems with YCSB},
+	year = {2010},
+	isbn = {9781450300360},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1807128.1807152},
+	doi = {10.1145/1807128.1807152},
+	abstract = {While the use of MapReduce systems (such as Hadoop) for large scale data analysis has been widely recognized and studied, we have recently seen an explosion in the number of systems developed for cloud data serving. These newer systems address "cloud OLTP" applications, though they typically do not support ACID transactions. Examples of systems proposed for cloud serving use include BigTable, PNUTS, Cassandra, HBase, Azure, CouchDB, SimpleDB, Voldemort, and many others. Further, they are being applied to a diverse range of applications that differ considerably from traditional (e.g., TPC-C like) serving workloads. The number of emerging cloud serving systems and the wide range of proposed applications, coupled with a lack of apples-to-apples performance comparisons, makes it difficult to understand the tradeoffs between systems and the workloads for which they are suited. We present the "Yahoo! Cloud Serving Benchmark" (YCSB) framework, with the goal of facilitating performance comparisons of the new generation of cloud data serving systems. We define a core set of benchmarks and report results for four widely used systems: Cassandra, HBase, Yahoo!'s PNUTS, and a simple sharded MySQL implementation. We also hope to foster the development of additional cloud benchmark suites that represent other classes of applications by making our benchmark tool available via open source. In this regard, a key feature of the YCSB framework/tool is that it is extensible--it supports easy definition of new workloads, in addition to making it easy to benchmark new systems.},
+	booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+	pages = {143–154},
+	numpages = {12},
+	keywords = {cloud serving database, benchmarking},
+	location = {Indianapolis, Indiana, USA},
+	series = {SoCC '10}
+}
+@misc{ycsb_cpp,
+	author = {Jinglei Ren and Chris Kjellqvist and Youngjae Lee},
+	title = {YCSB-cpp},
+	year = {2014},
+	publisher = {GitHub},
+	journal = {GitHub repository},
+	howpublished = {\url{https://github.com/ls4154/YCSB-cpp}},
+	commit = {9677390e6d9cbf0f0172b831aeba442202a08661}
+}
+@misc{clock_algo,
+	title={Page Replacement Algorithms},
+	url={https://www.cs.utexas.edu/users/witchel/372/lectures/16.PageReplacementAlgos.pdf},
+	author={Witchel, Emmett},
+	organization={The University of Texas at Austin},
+	year={2009}
+}
+@article{leanstore,
+	title={LeanStore: In-Memory Data Management beyond Main Memory},
+	author={Viktor Leis and Michael Haubenschild and Alfons Kemper and Thomas Neumann},
+	journal={2018 IEEE 34th International Conference on Data Engineering (ICDE)},
+	year={2018},
+	pages={185-196}
+}

@@ -1,0 +1,143 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{7}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Alhomssi and Leis}{Alhomssi and Leis}{2021}]%
+        {contention_space_management}
+\bibfield{author}{\bibinfo{person}{Adnan Alhomssi} {and}
+  \bibinfo{person}{Viktor Leis}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Contention and Space Management in B-Trees}. In
+  \bibinfo{booktitle}{\emph{11th Conference on Innovative Data Systems
+  Research, {CIDR} 2021, Virtual Event, January 11-15, 2021, Online
+  Proceedings}}. \bibinfo{publisher}{www.cidrdb.org}.
+\newblock
+\urldef\tempurl%
+\url{http://cidrdb.org/cidr2021/papers/cidr2021\_paper21.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Cooper, Silberstein, Tam, Ramakrishnan, and
+  Sears}{Cooper et~al\mbox{.}}{2010}]%
+        {ycsb}
+\bibfield{author}{\bibinfo{person}{Brian~F. Cooper}, \bibinfo{person}{Adam
+  Silberstein}, \bibinfo{person}{Erwin Tam}, \bibinfo{person}{Raghu
+  Ramakrishnan}, {and} \bibinfo{person}{Russell Sears}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Benchmarking Cloud Serving Systems with YCSB}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 1st ACM Symposium on Cloud
+  Computing}} \emph{(\bibinfo{series}{SoCC '10})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{143–154}.
+\newblock
+\showISBNx{9781450300360}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1807128.1807152}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kissinger, Schlegel, Habich, and
+  Lehner}{Kissinger et~al\mbox{.}}{2012}]%
+        {kiss_tree}
+\bibfield{author}{\bibinfo{person}{Thomas Kissinger}, \bibinfo{person}{Benjamin
+  Schlegel}, \bibinfo{person}{Dirk Habich}, {and} \bibinfo{person}{Wolfgang
+  Lehner}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{KISS-Tree: Smart Latch-Free in-Memory Indexing on
+  Modern Architectures}. In \bibinfo{booktitle}{\emph{Proceedings of the Eighth
+  International Workshop on Data Management on New Hardware}}
+  \emph{(\bibinfo{series}{DaMoN '12})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{16–23}.
+\newblock
+\showISBNx{9781450314459}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2236584.2236587}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Leis, Haubenschild, Kemper, and Neumann}{Leis
+  et~al\mbox{.}}{2018}]%
+        {leanstore}
+\bibfield{author}{\bibinfo{person}{Viktor Leis}, \bibinfo{person}{Michael
+  Haubenschild}, \bibinfo{person}{Alfons Kemper}, {and} \bibinfo{person}{Thomas
+  Neumann}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{LeanStore: In-Memory Data Management beyond Main
+  Memory}.
+\newblock \bibinfo{journal}{\emph{2018 IEEE 34th International Conference on
+  Data Engineering (ICDE)}} (\bibinfo{year}{2018}), \bibinfo{pages}{185--196}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Leis, Haubenschild, and Neumann}{Leis
+  et~al\mbox{.}}{2019}]%
+        {optimistic_locks}
+\bibfield{author}{\bibinfo{person}{Viktor Leis}, \bibinfo{person}{Michael
+  Haubenschild}, {and} \bibinfo{person}{Thomas Neumann}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Optimistic Lock Coupling: A Scalable and Efficient
+  General-Purpose Synchronization Method}.
+\newblock \bibinfo{journal}{\emph{IEEE Data Eng. Bull.}}  \bibinfo{volume}{42}
+  (\bibinfo{year}{2019}), \bibinfo{pages}{73--84}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ren, Kjellqvist, and Lee}{Ren
+  et~al\mbox{.}}{2014}]%
+        {ycsb_cpp}
+\bibfield{author}{\bibinfo{person}{Jinglei Ren}, \bibinfo{person}{Chris
+  Kjellqvist}, {and} \bibinfo{person}{Youngjae Lee}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \bibinfo{title}{YCSB-cpp}.
+\newblock \bibinfo{howpublished}{\url{https://github.com/ls4154/YCSB-cpp}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Witchel}{Witchel}{2009}]%
+        {clock_algo}
+\bibfield{author}{\bibinfo{person}{Emmett Witchel}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{title}{Page Replacement Algorithms}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.cs.utexas.edu/users/witchel/372/lectures/16.PageReplacementAlgos.pdf}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}

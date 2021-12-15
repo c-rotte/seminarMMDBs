@@ -1,0 +1,43 @@
+AMD Ryzen 5 2600X (12 hw-threads) 3.6 GHz
+12 gb ram
+Samsung SSD 860 EVO 1TB
+Manjaro Linux x86_64
+----------------------------------------------------------
+key: 'user' + toString(int64)
+value: 10 fields with a total of 1000 bytes
+https://stackoverflow.com/questions/41165404/what-is-the-alpha-parameter-of-ycsb-zipf-distribution
+----------------------------------------------------------
+Contention Split:
+
+update-heavy (0.8 update / 0.2 read)
+(10,000,000 entries; 100,000,000 operations)
+(buffer: big enough to hold them all in memory)
+page size: 4 kib
+d1=0.005
+d2=0.0005
+d3=0.9
+
+none: 286858 421394 578091 724514 846653 913793 935567 979472 1014280 1034151 1023162 1016879 1001410 997542 981870 972225 951751 950465 944251 942106 923913 914251 919453 920437
+cont: 283377 432360 580315 744324 857910 921247 951539 995192 1044894 1065613 1084889 1095754 1107812 1110749 1119113 1120764 1126000 1126228 1133865 1146973 1156404 1161055 1167836 1175143
+----------------------------------------------------------
+
+X-Merge (evictions):
+read=0.3 update=0.6 insert=0.1
+(10,000,000 entries; 100,000,000 operations)
+10 threads
+page size: 4 kib
+
+buffer=75k pages: (~66% -> 0.5 fits)
+none: 125992
+xmer: 131429 (merges: 26050)
+both: 134615 (merges: 27290)
+
+buffer=37.5k pages: (~66% -> 0.25 fits)
+none: 90675
+xmer: 101136 (merges: 92013)
+both: 100451 (merges: 95254)
+
+buffer=15k pages: (~66% -> 0.1 fits)
+none: 85621
+xmer: 89135 (merges: 75986)
+both: 87254 (merges: 76074)

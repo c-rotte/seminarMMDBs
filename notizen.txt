@@ -1,0 +1,13 @@
+B+-Baum
+Buffermanager 1000 pages <-> 500 in memory mit io
+mixed workload
+ab-test
+
+präsi:
+genrelle idee, implementierung, 
+
+ergebnisse experimente; nicht genau wie implementiert; zusammenfassung paper kurz
+
+
+// todo: eigene workloads testen mit https://github.com/brianfrankcooper/YCSB https://courses.cs.duke.edu/fall13/compsci590.4/838-CloudPapers/ycsb.pdf
+// todo: vllt auch mit den tests von leanstore vergleichen

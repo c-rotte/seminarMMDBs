@@ -1,0 +1,25 @@
+1) B-Trees in databases
+    1.1) Quick Recap (general structure of B-Trees)
+    1.2) Use in Database Systems (B+-Tree, Buffer <-> Pages with 1 Node each)
+    1.3) Multithreaded Environment (different synchronization methods -> one way: one rw lock per node/page)
+2) Problem: Node Contention
+    2.1) Focus: Update Method
+    2.2) Contention (multiple keys in one leaf node -> threads may have to wait)
+    2.3) Contention Split
+3) Problem: Page Evictions
+    3.1) Focus: Buffer with limited memory (requires page evictions)
+    3.2) X-Merge
+4) Recap + Comparison between Contention Split + X-Merge
+5) Evaluation
+    5.1) Implementation
+    5.1) YCSB
+    5.2) Contention Split alone
+        5.2.1) YCSB workload setup
+        5.2.2) Enabled vs. Disabled
+    5.3) X-Merge alone
+        5.3.1) Same workload + Buffer Setup
+        5.3.2) Enabled vs. Disabled
+    5.4) Combined
+6) Comparison with the Evaluation of the Paper + Conclusion
+    6.1) Leanstore + Evaluation of the Paper
+    6.2) Conclusion
